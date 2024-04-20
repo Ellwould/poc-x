@@ -48,7 +48,7 @@ DNS.1 = [FQDN]
 
 6) Generate and sign your poc-x.crt. Vaild for 5 years (1825 days):
 
-openssl x509 -req -SHA384 -extfile client-extensions.ext -days 1095 -in poc-x.csr -CA poc-x-ca.crt -CAkey poc-x-ca.key -CAcreateserial -out poc-x.crt
+openssl x509 -req -SHA384 -extfile client-extensions.ext -days 1825 -in poc-x.csr -CA poc-x-ca.crt -CAkey poc-x-ca.key -CAcreateserial -out poc-x.crt
 
 ----------------------------------------------------------------------------------------------------
 
