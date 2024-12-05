@@ -12,10 +12,7 @@
 
 ### Additional Software Required:
 
-- apt install php-mbstring
-- apt install php8.3-mysqli
-- apt install php8.3-fpm
-- apt install unzip
+apt install php-mbstring php8.3-mysqli php8.3-fpm unzip
 
 <br>
 
