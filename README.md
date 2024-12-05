@@ -29,6 +29,12 @@
 
 ## Additional GNU/Linux Steps Required:
 
-- mkdir /etc/nginx/phpMyAdmin
-- mkdir /etc/nginx/phpMyAdmin/tmp
-- 
+mkdir /etc/nginx/phpMyAdmin;
+mkdir /etc/nginx/phpMyAdmin/tmp;
+chmod 550 /etc/nginx/phpMyAdmin;
+chown root:www-data /etc/nginx/phpMyAdmin;
+find /etc/nginx/phpMyAdmin/ -type f -exec chmod 440 {} \;
+find /etc/nginx/phpMyAdmin/ -type d -exec chmod 550 {} \;
+find /etc/nginx/phpMyAdmin/ -type f -exec chown root:www-data {} \;
+find /etc/nginx/phpMyAdmin/ -type d -exec chown root:www-data {} \;
+chmod 770 /etc/nginx/phpMyAdmin/tmp;
