@@ -21,10 +21,12 @@
 
 ### Additional Database Steps Required:
 
-- CREATE DATABASE phpmyadmin;
-- CREATE USER 'phpmyadmin'@'localhost' IDENTIFIED BY '(INSERT PASSWORD)';
-- GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP ON `phpmyadmin`.* TO `phpmyadmin`@`localhost`;
-- GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP ON `(INSERT DATABASE NAME)`.* TO `phpmyadmin`@`localhost`; <b>OR</b> GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP ON \*.\* TO `phpmyadmin`@`localhost`;
+- CREATE DATABASE phpmyadmin;  
+- CREATE USER 'phpmyadmin'@'localhost' IDENTIFIED BY '(INSERT PASSWORD)';  
+- GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP ON `phpmyadmin`.* TO `phpmyadmin`@`localhost`;  
+- GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP ON `(INSERT DATABASE NAME)`.* TO `phpmyadmin`@`localhost`;  
+<b>OR</b>  
+- GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP ON \*.\* TO `phpmyadmin`@`localhost`;  
 
 <br>
 
