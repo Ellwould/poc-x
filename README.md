@@ -15,6 +15,7 @@
 - apt install php-mbstring
 - apt install php8.3-mysqli
 - apt install php8.3-fpm
+- apt install unzip
 
 <br>
 
